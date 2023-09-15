@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
+</head>
+
+<body>
+    <h1>jQuery Effect</h1>
+    <button class="hide">Hide</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum non ipsum ut placeat molestias deleniti aspernatur
+        hic incidunt voluptatum, deserunt ducimus vitae eveniet quibusdam culpa odio officiis dolore eaque fugit modi
+        iusto, aliquid quo repellendus cum. Asperiores magni adipisci accusantium cumque dolore dicta nostrum impedit
+        incidunt rerum laborum! Iure, magni?</p>
+    <button class="show">Show</button>
+    <h3>Toggling</h3>
+    <button class="toggle">Toggle</button>
+        <script>
+        // $(document).ready(function(){
+        $(function () {
+            $("h1").css("background-color", "teal");
+            // $(".hide").click(function (){
+            //     $("h1").hide(2000);
+            //     $("h1").css("background-color", "teal");
+            // });
+
+            // $(".hide").click(function(){
+            //     $("h1").fadeIn(2000)
+            //     $("h1").css("background-color", "teal")
+            // });
+
+            // $(".hide").click(function(){
+            //     $("h1").fadeOut(2000)
+            //     $("h1").css("background-color", "teal")
+            // });
+
+            // $(".show").click(function(){
+            //     $("p").show(2000);
+            //     $("p").css({backgroundColor : "Yellow", color : "red"});
+            // });
+
+            // $(".show").click(function(){
+            //     $("p").fadeTo(2000);
+            //     $("p").css({backgroundColor : "Yellow", color : "red"});
+            // });
+
+
+            // $(".toggle").click(function() {
+            //     $("h3").toggle(2000);
+            //     $("h3").css({backgroundColor : "Orange", color : "white"});
+            // });
+
+            // $(".toggle").click(function() {
+            //     $("h3").fadeToggle(2000);
+            //     $("h3").css({backgroundColor : "Orange", color : "white"});
+            // });
+
+            $(".hide").click(function (){
+                $("h1").slideUp(2000);
+                $("h1").css("background-color", "teal");
+            });
+
+            $(".show").click(function(){
+                $("p").slideDown(2000);
+                $("p").css({backgroundColor : "Yellow", color : "red"});
+            });
+
+            $(".toggle").click(function() {
+                $("h3").slideToggle(2000);
+                $("h3").css({backgroundColor : "Orange", color : "white"});
+            });
+
+        });
+    </script>
+</body>
+
+</html>
