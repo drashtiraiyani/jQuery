@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Selectors</title>
+    <!-- Adding jQuery To HTMl -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>jQuery Selectors</h1>
+    <p>jQuery Selectors are used to select and manipulate HTML elements</p>
+    <p>
+      With jQuery selectors, you can find or select HTML elements based on their
+      id, classes, attributes, types and much more from a DOM.
+    </p>
+    <p>
+      All jQuery selectors start with a dollor sign and parenthesis e.g. $(). It
+      is known as the factory function.
+    </p>
+    <ul>
+        <li>Tag Name i.e h1, p, input</li>
+        <li>#ID</li>
+        <li>.class</li>
+        <li>Universal(*)</li>
+        <li>Multiple Element A, B, C</li>
+    </ul>
+    <h4>So this is selectors in html under jQuery</h4>
+    <script>
+        $(function()
+        {
+            $("h1").css('background-color', 'Teal')
+            $("p").css('background-color', 'pink')
+            $("ul").css('background-color', 'khaki')
+            $("h4").css('background-color', 'purple').css('color' , 'white')
+        })
+    </script>
+  </body>
+</html>

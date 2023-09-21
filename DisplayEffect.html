@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery Hide</title>
+    <!-- Adding jQuery To HTMl -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>jQuery Hide / Show / Toggle</h1>
+    <p>The jQuery hide() method is used to hide the selected elements.</p>
+    <h2>Syntax</h2>
+    <pre>
+        $(selector).hide();  
+        $(selector).hide(speed, callback);  
+        $(selector).hide(speed, easing, callback);  
+    </pre>
+    <pre>
+        $(selector).show();  
+        $(selector).show(speed, callback);  
+        $(selector).show(speed, easing, callback);  
+    </pre>
+    <pre>
+        $(selector).toggle();  
+        $(selector).toggle(speed, callback);  
+        $(selector).toggle(speed, easing, callback);  
+        $(selector).toggle(display);  
+      </pre
+    >
+    <ul>
+      <li>
+        speed: It is an optional parameter. It specifies the speed of the delay.
+        Its possible vales are slow, fast and milliseconds.
+      </li>
+      <li>
+        easing: It specifies the easing function to be used for transition.
+      </li>
+      <li>
+        callback: It is also an optional parameter. It specifies the function to
+        be called after completion of hide() effect.
+      </li>
+      <li>
+        display: If true, it displays element. If false, it hides the element.
+      </li>
+    </ul>
+    <button class="hide">Hide</button>
+    <button class="show">Show</button>
+    <button class="toggle">Toggle</button>
+    <script>
+      $(function () {
+        $(".hide").click(function () {
+          $("h1").hide(2000);
+          $("h1").css({backgroundColor : "teal"});
+        });
+        $(".show").click(function () {
+          $("h1").show(2000);
+          $("h1").css({backgroundColor : "crimson", color : "aliceblue"});
+        });
+        $(".toggle").click(function () {
+          $("h1").toggle(2000);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding jQuery To HTMl</title>
+
+    <!-- Adding jQuery To HTMl -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous">
+    </script>
+  </head>
+  <body>
+    <h1>Adding jQuery To HTMl</h1>
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor
+      voluptatibus accusamus voluptates nulla quaerat reiciendis odit animi
+      inventore at culpa ratione nam, provident temporibus similique natus
+      necessitatibus nostrum hic laudantium.
+    </p>
+    <h2>$(document).ready() and $()</h2>
+    <p>
+      The code inserted between $(document).ready() is executed only once when
+      page is ready for JavaScript code to execute.
+    </p>
+    <p>
+      In place of $(document).ready(), you can use shorthand notation $() only.
+    </p>
+    <script>
+      //$(document).ready(function () {
+        $(function() {
+        $("h1").css("background-color", "khaki");
+        $("h2").css("background-color", "Teal");
+      //$("p").css("background-color", "crimson");
+        $("p").css({ backgroundColor: "crimson", color: "white" });
+        $("p").css("width", "550px").css("height", "300px").css("font-size", "8pt").css("background-color", "red");
+        $("p").css({ "background-color": "teal", "color": "khaki" });
+      });
+    </script>
+
+  </body>
+</html>

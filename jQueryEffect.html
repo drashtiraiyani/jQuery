@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Effects</title>
+    <!-- Adding jQuery To HTMl -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+    <h1>jQuery Effects</h1>
+    <p>jQuery enables us to add effects on a web page. </p>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="4">jQuery Effect</th>
+            </tr>
+            <tr>
+                <th>Display Effect</th>
+                <th>Fading Effect</th>
+                <th>Sliding Effect</th>
+                <th>Other Effect</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>hide()</td>
+                <td>fadeIn()</td>
+                <td>slideDown()</td>
+                <td>animate()</td>
+            </tr>
+            <tr>
+                <td>show()</td>
+                <td>fadeOut()</td>
+                <td>slideUp()</td>
+                <td>delay()</td>
+            </tr>
+            <tr>
+                <td rowspan="2">toogle()</td>
+                <td>fadeToggle()</td>
+                <td>slideToggle()</td>
+            </tr>
+            <tr>
+                <td>fadeTo()</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        $(function(){
+            $("h1").css('background-color', 'teal')
+            $("p").css('background-color', 'Khaki')
+            $("table").css({backgroundColor: 'pink', border: '1px solid black'})
+            $('th').css({textAlign: 'center', border: '1px solid black'})
+            $('td').css({textAlign: 'center', border: '1px solid black'})
+        })
+    </script>
+</body>
+</html>
